@@ -13,6 +13,7 @@ import Favorites from "./pages/Favorites/Favorites.tsx";
 import Admin from "./pages/Admin/Admin.tsx";
 import Delivery from "./pages/Delivery/Delivery.tsx";
 import Categories from "./pages/Categories/Categories.tsx";
+import Product from "./pages/Product/Product.tsx";
 
 function App() {
     return (
