@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 import {Route, Routes} from "react-router-dom";
 import MainScreen from "./pages/MainScreen/MainScreen.tsx";
 import AboutUs from "./pages/AboutUs/AboutUs.tsx";
