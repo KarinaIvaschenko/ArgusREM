@@ -1,8 +1,12 @@
+import Logo from "../Logo/Logo.tsx";
+import Search from "../Search/Search.tsx";
+
 const Header = () => {
     return (
-        <div>
-            <h1>Header</h1>
-        </div>
+        <header>
+            <Logo onClick={() => {}}/>
+            <Search value={""} onChange={() => {}}/>
+        </header>
     );
 };
 
