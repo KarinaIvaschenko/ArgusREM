@@ -1,0 +1,31 @@
+@use "../../styles/variables" as colors;
+@use "../../styles/mixins" as mixins;
+
+.header__container{
+  @include mixins.flexAlign-center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.header__navigation{
+  display: flex;
+  gap: 32px;
+}
+
+.link {
+  color: colors.$color-grey-light;
+  font-weight: bolder;
+
+  &:hover {
+    color: colors.$color-grey-dark;
+  }
+}
+
+.link.active {
+  color: colors.$color-white;
+}
+
+.header__icons{
+  display: flex;
+  gap: 24px
+}
