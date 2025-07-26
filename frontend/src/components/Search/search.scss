@@ -1,0 +1,19 @@
+@use '../../styles/variables' as colors;
+@use "../../styles/mixins" as mixins;
+
+.search {
+  background-color: colors.$color-white;
+  border-radius: 30px;
+  padding: 20px;
+  min-width: 372px;
+  height: 56px;
+  @include mixins.flexAlign-center
+}
+
+.search__img{
+  margin-right: 5px;
+}
+
+.search__input{
+  font-size: 18px;
+}
