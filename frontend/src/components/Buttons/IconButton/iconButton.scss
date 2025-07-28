@@ -1,0 +1,7 @@
+.iconButton__img{
+  filter: brightness(0) saturate(100%) invert(29%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(95%) contrast(90%);
+
+  &--active{
+    filter: brightness(0) invert(1);
+  }
+}

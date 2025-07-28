@@ -1,15 +1,68 @@
 @use "../../styles/variables" as colors;
 @use "../../styles/mixins" as mixins;
 
-.header__container{
+.header__container {
   @include mixins.flexAlign-center;
   justify-content: space-between;
   padding: 16px 0;
+  position: relative;
+  width: 100%;
+  @media screen and (max-width: 1200px) {
+    gap: 5px
+  }
 }
 
-.header__navigation{
+.header__burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+
+  span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: 0.3s;
+  }
+
+  @media screen and (max-width: 992px) {
+    display: flex;
+  }
+}
+
+.header__navigation {
   display: flex;
   gap: 32px;
+
+  @media screen and (max-width: 992px) {
+    display: none;
+
+    &--active {
+      @include mixins.flexAlign-center;
+      position: absolute;
+      top: 100%;
+      flex-direction: column;
+      background-color: colors.$color-black;
+      padding: 20px;
+      width: 100%;
+    }
+  }
+}
+
+.navigation__container {
+  @include mixins.flexAlign-center;
+  gap: 32px;
+
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .link {
@@ -19,13 +72,23 @@
   &:hover {
     color: colors.$color-grey-dark;
   }
+
+  @media screen and (max-width: 992px) {
+    font-size: 18px;
+  }
 }
 
 .link.active {
   color: colors.$color-white;
 }
 
-.header__icons{
+.header__actions {
+  @include mixins.flexAlign-center;
+  gap: 30px;
+  padding-right: 20px;
+}
+
+.header__icons {
   display: flex;
   gap: 24px
 }

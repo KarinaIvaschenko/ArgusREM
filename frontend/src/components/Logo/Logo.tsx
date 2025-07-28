@@ -6,7 +6,7 @@ interface ILogoProps {
 
 const Logo: FC<ILogoProps> = ({onClick}) => {
     return (
-        <button onClick={onClick}>
+        <button onClick={onClick} style={{paddingLeft: 20}}>
             <img src={"/images/main/logo.png"} alt="logo" width={97} height={50}/>
         </button>
     );
