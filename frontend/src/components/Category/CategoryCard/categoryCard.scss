@@ -1,0 +1,18 @@
+@use "../../../styles/variables" as colors;
+@use "../../../styles/mixins" as mixins;
+
+.categoryCard__btn {
+  padding: 25px;
+  background-color: colors.$color-main;
+  height: 128px;
+  min-width: 160px;
+  border-radius: 15px;
+  @include mixins.flex-center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.categoryCard__title {
+  color: colors.$color-white;
+  font-size: 18px;
+}
