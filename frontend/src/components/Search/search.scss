@@ -5,9 +5,12 @@
   background-color: colors.$color-white;
   border-radius: 30px;
   padding: 20px;
-  min-width: 372px;
+  width: 372px;
   height: 47px;
-  @include mixins.flexAlign-center
+  @include mixins.flexAlign-center;
+  @media screen and (max-width: 1200px) {
+    width: 250px;
+  }
 }
 
 .search__img{
