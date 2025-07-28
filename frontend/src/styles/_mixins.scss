@@ -8,3 +8,15 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin gridLayout($columns: 1, $rows: auto, $gap: 0) {
+  display: grid;
+
+  grid-template-columns: repeat($columns, 1fr);
+
+  @if $rows != auto {
+    grid-template-rows: repeat($rows, auto);
+  }
+
+  gap: $gap;
+}

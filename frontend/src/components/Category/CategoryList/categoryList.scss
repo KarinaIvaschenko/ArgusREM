@@ -1,0 +1,14 @@
+@use "../../../styles/variables" as colors;
+@use "../../../styles/mixins" as mixins;
+
+.categoryList {
+  @include mixins.gridLayout(6, auto, 32px);
+
+  @media screen and (max-width: 1400px) {
+    @include mixins.gridLayout(3, 2, 24px);
+  }
+
+  @media screen and (max-width: 768px) {
+    @include mixins.gridLayout(1, auto, 16px);
+  }
+}

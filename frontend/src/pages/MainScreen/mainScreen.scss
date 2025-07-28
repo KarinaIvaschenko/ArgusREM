@@ -1,0 +1,15 @@
+.mainScreen {
+  padding: 80px 140px;
+
+  @media screen and (max-width: 992px) {
+    padding: 60px 100px;
+  }
+
+  @media screen and (max-width: 764px) {
+    padding: 60px 160px;
+  }
+
+  @media screen and (max-width: 576px) {
+    padding: 60px 120px;
+  }
+}

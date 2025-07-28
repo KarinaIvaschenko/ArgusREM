@@ -1,7 +1,12 @@
+import CategoryScreen from "../../components/Category/CategoryScreen/CategoryScreen.tsx";
+import "./mainScreen.scss";
+
 const MainScreen = () => {
     return (
-        <div>
-            <h1>Title</h1>
+        <div className="mainScreen">
+            <div className="container">
+                <CategoryScreen/>
+            </div>
         </div>
     );
 };
